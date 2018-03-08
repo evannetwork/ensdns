@@ -117,7 +117,7 @@ func bindENS(address common.Address, caller bind.ContractCaller, transactor bind
 	if err != nil {
 		return nil, err
 	}
-	return bind.NewBoundContract(address, parsed, caller, transactor), nil
+	return bind.NewBoundContract(address, parsed, caller, transactor, nil), nil
 }
 
 // Call invokes the (constant) contract method with params as input values and
@@ -425,7 +425,7 @@ func bindFIFSRegistrar(address common.Address, caller bind.ContractCaller, trans
 	if err != nil {
 		return nil, err
 	}
-	return bind.NewBoundContract(address, parsed, caller, transactor), nil
+	return bind.NewBoundContract(address, parsed, caller, transactor, nil), nil
 }
 
 // Call invokes the (constant) contract method with params as input values and
@@ -592,7 +592,7 @@ func bindPublicResolver(address common.Address, caller bind.ContractCaller, tran
 	if err != nil {
 		return nil, err
 	}
-	return bind.NewBoundContract(address, parsed, caller, transactor), nil
+	return bind.NewBoundContract(address, parsed, caller, transactor, nil), nil
 }
 
 // Call invokes the (constant) contract method with params as input values and
@@ -884,7 +884,7 @@ func bindResolver(address common.Address, caller bind.ContractCaller, transactor
 	if err != nil {
 		return nil, err
 	}
-	return bind.NewBoundContract(address, parsed, caller, transactor), nil
+	return bind.NewBoundContract(address, parsed, caller, transactor, nil), nil
 }
 
 // Call invokes the (constant) contract method with params as input values and
