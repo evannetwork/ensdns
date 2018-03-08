@@ -20,7 +20,7 @@ package ens
 import (
     "strings"
 
-    "github.com/arachnid/ensdns/ens/contract"
+    "github.com/evannetwork/ensdns/ens/contract"
     "github.com/miekg/dns"
     "github.com/ethereum/go-ethereum/accounts/abi/bind"
     "github.com/ethereum/go-ethereum/common"

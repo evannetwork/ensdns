@@ -27,8 +27,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/arachnid/ensdns/ens"
-	"github.com/arachnid/ensdns/utils"
+	"github.com/evannetwork/ensdns/ens"
+	"github.com/evannetwork/ensdns/utils"
 	"github.com/ethereum/go-ethereum/accounts"
 	"github.com/ethereum/go-ethereum/accounts/abi/bind"
 	ethutils "github.com/ethereum/go-ethereum/cmd/utils"
@@ -41,7 +41,7 @@ import (
 
 var (
 	ethapiFlag          = flag.String("ethapi", "http://localhost:8545", "Path to connect to Ethereum node on")
-	nsDomainFlag        = flag.String("nsdomain", ".ens.domains.", "Domain name for this ENS server")
+	nsDomainFlag        = flag.String("nsdomain", ".evan.domains.", "Domain name for this ENS server")
 
 	uploadFlagSet       = flag.NewFlagSet("upload", flag.ExitOnError)
 	uploadKeystoreFlag  = uploadFlagSet.String("keystore", "", "Path to keystore")
